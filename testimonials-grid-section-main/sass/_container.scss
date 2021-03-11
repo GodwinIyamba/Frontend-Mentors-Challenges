@@ -1,0 +1,139 @@
+.box {
+    padding: 1.5rem;
+    border-radius: 5px;
+    color: var(--clr-white-lighter);
+   
+
+    & > h3 {
+        color: var(--clr-white);
+        font-size: 1.25rem;
+    }
+
+    & > p {
+        color: var(--clr-white-lighter);
+        font-size: .8rem;
+        margin: 1rem 0 0 0;
+        line-height: 1.5;
+    }
+    & figure {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-column-gap: 1rem;
+    }
+
+    & figure img {
+        width: 2rem;
+        height: 2rem;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        
+    }
+
+    & figure figcaption h2 {
+        font-size: 1rem;
+        color: var(--clr);
+    }
+
+    & figure figcaption p {
+        font-size: .8rem;
+        color: var(--clr-white-lighter);
+    }
+}
+
+.box-1{
+    grid-column: 1 / span 2;
+    background-color: var(--clr-mv);
+
+    @media only screen and (max-width: 23.43em) {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        
+    }
+    
+}
+
+.box-2 {
+    grid-column: 3 / span 1;
+    background-color: var(--clr-gb-d);
+
+    @media only screen and (max-width: 23.43em) {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+    }
+    
+}
+
+.box-3 {
+    grid-column: 4 /span 1;
+    grid-row: 1 / -1;
+    background-color: var(--clr-white);
+
+    @media only screen and (max-width: 23.43em) {
+        grid-column: 1 / -1;
+        grid-row: 5 / 6;
+}
+
+
+    & figure figcaption h2 {
+        color: var(--clr-gb-d);
+    }
+
+    & figure figcaption p {
+        color: var(--clr-gb-light);
+    }
+
+    & > h3 {
+        color: var(--clr-gb-d);
+    }
+
+    & > p {
+        color: var(--clr-gb-lighter);
+        line-height: 1.8;
+       
+    }
+    
+}
+
+.box-4 {
+    grid-column: 1 / span 1 ;
+    background-color: var(--clr-white);
+    box-shadow: 48px 98px 51px -100px rgba(0,0,0,0.63);
+    -webkit-box-shadow: 48px 98px 51px -100px rgba(0,0,0,0.63);
+    -moz-box-shadow: 48px 98px 51px -100px rgba(0,0,0,0.63);
+
+    @media only screen and (max-width: 23.43em) {
+        grid-column: 1 / -1;
+        grid-row: 3 / 4;
+    }
+    
+
+    & figure figcaption h2 {
+        color: var(--clr-gb-d);
+    }
+
+    & figure figcaption p {
+        color: var(--clr-gb-light);
+    }
+
+    & > h3 {
+        color: var(--clr-gb-d);
+    }
+
+    & > p {
+        color: var(--clr-gb-lighter);
+        margin-top: 1.8rem;
+        line-height: 1.8;
+    }
+}
+
+.box-5 {
+    grid-column: 2 / 4;
+    background-color: var(--clr-bb);
+
+    @media only screen and (max-width: 23.43em) {
+        grid-column: 1 / -1;
+        grid-row: 4 / 5;
+    }
+    
+}
